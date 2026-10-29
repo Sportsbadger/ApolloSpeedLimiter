@@ -1,13 +1,19 @@
 # PlatformIO build output and downloaded dependencies
 .pio/
 
-# VS Code's machine-specific settings and generated files; keep the shared
-# extension recommendations so collaborators can set up the project easily.
-.vscode/*
-!.vscode/extensions.json
+# Local editor settings
+.vscode/
 
 # macOS Finder metadata
 .DS_Store
 
 # Bluetooth captures can contain traffic from other devices.
 btsnoop*.log*
+
+# Local notes, alternate sketches and unused PlatformIO starter folders
+README.md
+Apollo_Phantom_V4X_BLE_Project_History.md
+sketches/
+include/
+lib/
+test/

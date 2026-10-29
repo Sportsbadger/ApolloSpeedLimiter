@@ -1,1 +1,0 @@
-ESP32 code to set Apollo Phantom V4x Speed Limiter. Upon power on the, the board searches for the scooter, send a configurable speed command and disconnects. 
