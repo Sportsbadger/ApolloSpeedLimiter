@@ -11,7 +11,6 @@
 btsnoop*.log*
 
 # Local notes, alternate sketches and unused PlatformIO starter folders
-README.md
 Apollo_Phantom_V4X_BLE_Project_History.md
 sketches/
 include/
