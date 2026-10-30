@@ -10,6 +10,7 @@ It has happened to us all. There you are, out on your scooter on private land, e
 1. ESP32 - Flash the code, add power. Board sends 15mph speed limit over Bluetooth until the scooter responds
 2. Bluetooth APK - Open the app, it sends 15mph limit over Bluetooth then closes down up acknowledgement
 
-Disclaimer - You are on your own in this world*, which include this code. If you brick your Scooter, that's on you. 
+Disclaimer - You are on your own in this world, which include this code. If you brick your Scooter, that's on you. 
+
 
 
