@@ -6,7 +6,7 @@ It has happened to us all. There you are, out on your scooter on private land, e
 
 There are 2 different ways to keep gran safe...
 
-1. ESP32 - Flash the code, add power. Board sends 15mph speed limit over bluetooth until the scooter responds
-2. Bluetooth apk - Open the app, it sends 15mpg limit over Bluetooth then closes down up acknowledgement
+1. ESP32 - Flash the code, add power. Board sends 15mph speed limit over Bluetooth until the scooter responds
+2. Bluetooth apk - Open the app, it sends 15mph limit over Bluetooth then closes down up acknowledgement
 
 
