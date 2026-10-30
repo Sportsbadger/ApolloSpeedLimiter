@@ -23,3 +23,9 @@ android/.idea/
 android/local.properties
 android/build/
 android/app/build/
+
+# Keep only the shareable APK from the Android project in Git.
+/android/*
+!/android/releases/
+/android/releases/*
+!/android/releases/phantom-15mph-debug.apk
