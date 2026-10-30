@@ -16,3 +16,10 @@ sketches/
 include/
 lib/
 test/
+
+# Android Studio and Gradle local state and generated build files
+android/.gradle/
+android/.idea/
+android/local.properties
+android/build/
+android/app/build/
