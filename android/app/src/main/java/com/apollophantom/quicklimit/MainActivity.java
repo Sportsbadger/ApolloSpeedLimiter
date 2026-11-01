@@ -6,6 +6,7 @@ import android.bluetooth.*;
 import android.bluetooth.le.*;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.*;
 import android.view.Gravity;
 import android.widget.*;
@@ -26,8 +27,8 @@ public class MainActivity extends Activity {
     private final Runnable timeout = () -> reconnect("No response yet. Reconnecting…");
     private void crc(byte[] data) { int c=0xffff; for(int i=0;i<data.length-2;i++){ c ^= data[i]&255; for(int b=0;b<8;b++) c=(c&1)!=0?(c>>>1)^0xa001:c>>>1; } data[data.length-2]=(byte)c; data[data.length-1]=(byte)(c>>>8); }
     @Override public void onCreate(Bundle b) { super.onCreate(b); crc(command); crc(expected);
-        LinearLayout box = new LinearLayout(this); box.setOrientation(1); box.setGravity(Gravity.CENTER); box.setPadding(40,40,40,40);
-        status = new TextView(this); status.setTextSize(20); status.setGravity(Gravity.CENTER); box.addView(status);
+        LinearLayout box = new LinearLayout(this); box.setBackgroundColor(Color.TRANSPARENT); box.setOrientation(1); box.setGravity(Gravity.CENTER); box.setPadding(40,40,40,40);
+        status = new TextView(this); status.setTextColor(Color.WHITE); status.setShadowLayer(4f, 0f, 0f, Color.BLACK); status.setTextSize(20); status.setGravity(Gravity.CENTER); box.addView(status);
         setContentView(box); start(); }
     private void show(String s) { runOnUiThread(() -> status.setText(s)); }
     private void start() { cleanup(); finished=false;
